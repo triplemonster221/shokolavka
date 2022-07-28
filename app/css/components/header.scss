@@ -1,0 +1,148 @@
+.header{
+    height: 71px;
+    position: absolute;
+    width: 100%;
+    padding-top: 25px;
+    z-index: 2;
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .logo {
+        max-width: 170px;
+        height: 66px;
+        width: 100%;
+
+        img {
+            object-fit: contain;
+        }
+
+        @include mobile (){
+            max-width:100px;
+        }
+    }
+
+    &__info {
+        font-weight: 500;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+
+        span {
+            font-weight: 700;
+        }
+
+        @include desctop() {
+            display: none;
+        }
+    }
+
+    &__pnone {
+        position: relative;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 21px;
+        padding-left: 30px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background: url(../img/offer/tel.svg);
+            width: 17px;
+            height: 16px;
+            background-repeat: no-repeat;
+            left: 0;
+            top: 0;
+        }
+
+        @include mobile (){
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        &:hover {
+            
+        }
+    }
+
+    
+
+    &-social {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        @include mobile (){
+            flex-direction: column;
+        }
+    }
+
+    &__calBack {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        color: #D71B4A;
+        background: transparent;
+        border: none;
+        outline: none;
+        margin-top: 3px;
+        padding-left: 38px;
+
+        @include mobile (){
+            font-size: 10px;
+            height: 22px;
+            width: 130px;
+            padding: 0 8px 0 17px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            left: 28px;
+            top: 0;
+
+            @include mobile (){
+                left: 20px;
+            }
+        }
+
+        svg {
+            fill: #ac7e29;
+            transform:rotate(-45deg);
+            position: absolute;
+            left: 5px;
+            top: 3px;
+
+            @include mobile (){
+               width: 10px;
+               height: 10px;
+            }
+        }
+    }
+
+    .header-social-thanks {
+        flex-direction: column;
+    }
+
+    .header-social-thanks-text {
+        font-size: 12px;
+        text-align: center;
+        line-height: 1.2em;
+
+        @include mobile (){
+            display: none;
+        }
+    }
+    
+}
+

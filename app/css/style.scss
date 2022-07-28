@@ -1,6 +1,8 @@
-header{
-    .green {
-        color: blue; 
-        box-shadow: 1 1 1 #000;
-    }
-}
+@import "base/vars.scss";
+@import "base/mixins.scss";
+@import "base/fonts.scss";
+@import "base/base.scss";
+@import "components/header.scss"; 
+@import "components/offer.scss"; 
+@import "components/model.scss";
+@import "components/asortiment.scss"; 

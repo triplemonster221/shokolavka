@@ -1,0 +1,293 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+    }
+    *,
+    *::after,
+    *::before {
+    box-sizing: inherit;
+    }
+    body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    position: relative;
+    color: #352F2F;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 1.3em;
+
+    @include mobile (){
+       font-size: 16px;
+    }
+    }
+    .main {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+
+        @include mobile {
+            
+        }
+    }
+    p {
+    margin: 0;
+        cursor: default;
+
+        @include mobile() {
+            font-size: 16px !important;
+            line-height: 1.1em;
+        }
+    }
+    button{
+        cursor: pointer;
+    }
+    span,
+    div {
+        cursor: default; 
+        @include mobile() {
+            font-size: 16px !important;
+            line-height: 1.1em;
+        }
+    }
+    ul,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    a {
+    text-decoration: none;
+    color:inherit;
+    }
+    h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    line-height: 1.25em;
+    }
+    input,
+    textarea {
+    font-family: inherit;
+    }
+    button {
+        cursor: pointer;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+    .container {
+    max-width:1170px;
+    width: 100%;
+    flex: 1 1 auto;
+    padding: 0 15px; 
+    margin: 0 auto;
+
+        @include mobile (){
+            max-width:300px;
+        }
+    
+    }
+    .section-title {
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 130%;
+        margin-bottom: 38px;
+        color: $red-color;
+
+        @include mobile (){
+            font-size: 22px;
+            margin-bottom: 20px !important;
+        }
+    }
+    ._yellow {
+    }
+
+    @-webkit-keyframes slideme {
+        0% {
+          left: -30px;
+          margin-left: 0;
+        }
+        30%,
+        to {
+          left: 110%;
+          margin-left: 80px;
+        }
+      }
+      
+      @keyframes slideme {
+        0% {
+          left: -30px;
+          margin-left: 0;
+        }
+        30%,
+        to {
+          left: 110%;
+          margin-left: 80px;
+        }
+      }
+ 
+    .btn {
+        position: relative;
+        width: 310px;
+        height: 71px;
+        font-size: 16px;
+        line-height: 40px;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        border: none;
+        transition: background-image .3s;
+        overflow: hidden;
+        background: linear-gradient(90deg, #7BFB89 0%, #17BC26 100%);
+        box-shadow: 0px 3px 0px #1BAD29, inset 0px 0px 10px #A9FFB2;
+        border-radius: 100px;
+        font-weight: 600;
+        text-align: center;
+        text-shadow: 0px 1px 0px #1BAD29;
+
+        &::after {
+            content: "";
+            margin-left: 60px;
+            width: 15px;
+            height: 300px;
+            background: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0.01));
+            -webkit-animation-delay: .05s;
+            animation-delay: .01s;
+            position: absolute;
+            left: -90px;
+            top: -150px;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            transition: all .3s;
+            -webkit-animation-name: slideme;
+            animation-name: slideme;
+            -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            transform: rotate(45deg);
+            z-index: 0;
+        }
+
+        @include mobile (){
+           width: 100% !important;
+           font-size: 14px !important;
+            height: 45px !important;
+        }
+ 
+        &:hover {
+            background: linear-gradient(90deg, #7BFB89 0%, #7BFB89 100%);
+        }
+
+        &:active {
+            background: linear-gradient(90deg, #17BC26 0%, #17BC26 100%);
+        }
+    }
+    .fat {
+        font-weight: 600;
+    }
+    .title-reg {
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        @include mobile (){
+            font-size: 22px !important;
+        }
+    }
+
+    .section-mob {
+        @include mobile (){
+            padding: 30px 0 !important;
+        }
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+    }
+
+    input {
+        outline: none;
+    }
+
+    label.error {
+        display: none !important;
+    }
+
+    input.error {
+        display: block;
+        color: red;
+
+        &::placeholder {
+            color: red;
+        }
+
+        border: 1px solid red;
+    }
+
+    .d-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top-anim {
+        opacity: 0;
+        transform: translateY(-30px);
+        transition: opacity 1.5s, transform 2s;
+        &._active {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .down-anim {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1.5s, transform 2s;
+        &._active {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .left-anim {
+        opacity: 0;
+        transform: translateX(-30px);
+        transition: opacity 1.5s, transform 2s;
+
+        &._active {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .right-anim {
+        opacity: 0;
+        transform: translateX(30px);
+        transition: opacity 1.5s, transform 2s;
+        &._active {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+    }
+
+    .red {
+        color: #D71B4A;
+        font-size: inherit;
+    }
