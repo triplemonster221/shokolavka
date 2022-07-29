@@ -1,0 +1,238 @@
+.advantarges{
+    position: relative;
+    padding: 71px 0 78px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        left: 0;
+        bottom: 0;
+        background: #F9F8F6;
+        box-shadow: 0px -20px 20px 0px #f9f8f6;
+    }
+
+    .container {
+        position: relative;
+        z-index: 3;
+    }
+    .advantarges-top  {
+        display: flex;
+        margin-bottom: 42px;
+    }
+
+    .advantarges-top-info {
+        width: 50%;
+    }
+
+    .advantarges-top-img {
+        position: relative;
+        width: 50%;
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 405px;
+            height: 575px;
+            background: url(../img/advantages/bg2.png);
+            left: 41px;
+            bottom: -41px;
+        }
+
+        .advantarges-top-avtor {
+            position: absolute;
+            width: 245px;
+            height: 154px;
+            background: #FEEDC2;
+            border: 4px solid #FFFFFF;
+            border-radius: 20px;
+            padding: 24px;
+            right: 0;
+            bottom: 170px;
+            z-index: 1;
+        }
+
+        .advantarges-top-avtor-img {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: url(../img/advantages/cupcake.svg);
+            background-repeat: no-repeat;
+            right: 0;
+            bottom: -9px;
+            
+        }
+
+        .company-avtor {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+            color: #D71B4A;
+            margin-bottom: 10px;
+        }
+
+        .company-type {
+            font-size: 14px;
+            line-height: 150%;
+        }
+    }
+
+    .advantarges_model {
+        padding-bottom: 20px;
+    }
+
+    .advantarges-top-info-text {
+        margin-bottom: 16px;
+
+    }
+
+}
+
+.advantarges-maps  {
+    display: flex;
+    padding: 64px 50px 5px 20px;
+    background: #FFFFFF;
+    border: 10px solid #F0F0F0;
+    border-radius: 20px;
+    margin-bottom: 46px;
+
+    .advantarges-maps-img  {
+        position: relative;
+        width: 40%;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 416.62px;
+            height: 427.1px;
+            left: 0;
+            top: -65px;
+            background: url(../img/advantages/map.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .advantarges-maps-info {
+        width: 60%;
+        margin-bottom: 37px;
+    }
+
+    ul.advantarges-maps-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .advantarges-maps-item {
+        position: relative;
+        margin-bottom: 20px;
+        padding-left: 30px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #352F2F;
+        width: 313px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background: url(../img/advantages/marker.svg);
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .advantarges-maps-bottom  {
+        font-size: 16px;
+        line-height: 150%;
+        margin-top: 17px;
+    }
+}
+
+.advantarges-bottom {
+    position: relative;
+    display: flex;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 341.12px;
+        height: 256.13px;
+        transform: rotate(-8.64deg);
+        background: url(../img/advantages/cooki.png);
+        left: -19%;
+        top: -40%;
+    }
+
+
+    .advantarges-bottom-purpose {
+        position: relative;
+        padding: 92px 30px 30px 30px;
+        width: 396px;
+        height: auto;
+        background: #FFFFFF;
+        border-radius: 20px;
+        margin-left: 51px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -19px;
+            right: 90px;
+            width: 94px;
+            height: 76px;
+            background: url(../img/advantages/kk.svg);
+            z-index: 1;
+        }
+
+        
+    }
+
+    .advantarges-bottom-purpose-img  {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        border-radius: 50%;
+        right: 30px;
+        top: 30px;
+        z-index: 2;
+    }
+
+    .advantarges-bottom-purpose-title {
+        font-weight: 400;
+        font-style: italic;
+        font-size: 34px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #D71B4A;
+        margin-bottom: 11px;
+    }
+
+    .advantarges-bottom-purpose-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #D71B4A;
+    }
+
+    .advantarges-bottom-info {
+        width: 50%;
+        margin-left: 78px;
+    }
+
+    .advantarges-bottom-info__text {
+        margin-bottom: 16px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

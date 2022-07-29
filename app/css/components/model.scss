@@ -155,21 +155,7 @@
         }
     }
 
-    .model-bottom-left-info {
-        padding-left: 61px;
-        position: relative;
-        margin-top: 40px;
-
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 40px;
-            height: 40px;
-            background-image: url(../img/model/cake.svg);
-        }
-    }
+    
 
     .model-bottom-right  {
         position: relative;
@@ -218,5 +204,21 @@
         bottom: 0;
         left: 0;
         z-index: -1;
+    }
+}
+
+.model-bottom-left-info {
+    padding-left: 61px;
+    position: relative;
+    margin-top: 40px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        background-image: url(../img/model/cake.svg);
     }
 }
