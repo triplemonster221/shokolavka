@@ -1,0 +1,135 @@
+.total {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 435px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(180deg, #F9F8F6 0%, rgba(249, 248, 246, 0) 100%);
+    }
+
+    .container-other {
+        max-width: 1500px;
+
+    }
+
+    .total-bg {
+        position: relative;
+        z-index: 1;
+        padding: 77px 0 268px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+    }
+
+    .total-subtitle {
+        margin-bottom: 32px;
+    }
+
+    .total-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .total-info {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .total-info-top {
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+
+    .total-info-bottom {
+        font-size: 16px;
+    }
+
+    .total-info-list  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 16px;
+    }
+
+    .total-info-item  {
+        display: flex;
+        width: 45%;
+
+        &__number {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            margin-right: 16px;
+            width: 44px;
+            text-align: right;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 150%;
+            color: #686363;
+        }
+
+
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .total-desc {
+        position: relative;
+        width: 418px;
+        height: 431px;
+        background: #F4F4F4;
+        border: 4px solid  #fff;
+        border-radius: 20px 20px 0px 0px;
+        padding: 24px 20px 24px 24px;
+        
+
+        .total-desc-inner {
+            overflow-y: scroll;
+            height: 100%;
+            &::-webkit-scrollbar {
+                width: 6px; /* ширина нового скроллбара */
+                
+            }
+
+            &::-webkit-scrollbar-track {
+                
+                background: #E4E3E3;
+                border-radius: 10px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #D71B4A;
+                border-radius: 10px;
+            }
+        }
+
+        .total-desc-text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: #352F2F;
+            margin-bottom: 12px;
+            padding-right: 20px;
+        }
+    }
+
+    .form-section  {
+        bottom: -12%;
+    }
+}

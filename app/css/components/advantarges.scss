@@ -83,6 +83,11 @@
 
     .advantarges_model {
         padding-bottom: 20px;
+
+        &::after {
+            background: url(../img/advantages/shield.svg); 
+            background-size: cover;
+        }
     }
 
     .advantarges-top-info-text {

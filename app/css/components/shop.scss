@@ -1,0 +1,140 @@
+.shop {
+    position: relative;
+    padding: 218px 0 74px 0;
+
+    .shop-images{
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../img/shops/bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            bottom: -74px;
+            height: 890px;
+        }
+    }
+    
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+    }
+
+    &::after{
+        width: 259px;
+        height: 260px;
+        background-image: url(../img/topleft.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 0;
+        top: 20%;
+        z-index: 1;
+    }
+
+    &::before {
+        width: 355px;
+        height: 324px;
+        background-image: url(../img/topright.png);
+        right: 0;
+        top: 4%;
+        z-index: 1;
+    }
+
+    .shop-subtitle {
+        margin-bottom: 26px;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .shop-content-title {
+        margin-bottom: 30px;
+    }
+
+
+    .shop-slider {
+
+        .slick-slide {
+            padding: 0 15px;
+        }
+
+        
+
+        .slick-arrow {
+            width: 60px;
+            height: 60px;
+            background: #d71b4a;
+            border: 5px solid #fff;
+            border-radius: 50%;
+            top: 50%;
+        }
+
+        .slick-prev{
+            left: -110px;
+        }
+
+        .slick-next{
+            right: -110px;
+        }
+    }
+
+    .shop-slider-box-bottom {
+        background: #574238;
+        border-radius: 0px 0px 15px 15px;
+        padding: 10px 0;
+        text-align: center;
+        height: 73px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+
+    .shop-bottom  {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 60px;
+    }
+
+    .shop-column {
+        width: 520px;
+        height: 144px;
+        background: #FFFFFF;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .shop-column-text {
+        max-width: 350px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #352F2F;
+
+    }
+
+    .shop-column-img {
+        width: 80px;
+        height: 80px;
+    }
+
+
+}

@@ -1,0 +1,125 @@
+.types {
+    position: relative;
+    padding: 71px 0 0 0 ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .types-inner {
+        position: relative;
+        padding: 0 0 196px 0;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -18%;
+            bottom: 0;
+            width: 345px;
+            height: 831px;
+            background: url(../img/types/women.png);
+            background-repeat: no-repeat;
+        }
+    }
+
+    .types-title {
+        color: #FEEDC2;
+    }
+
+    .types-subtitle {
+        color: #FFFFFF;
+        max-width: 610px;
+        width: 100%;
+        margin-bottom: 34px;
+    }
+
+    .types-slider {
+        max-width: 944px;
+        width: 100%;
+        .slick-slide {
+            background: #FFFFFF;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 0 20px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .slick-track {
+            display: flex;
+        }
+
+        .types-slider-box-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+
+        .types-slider-info-img {
+            width: 60px;
+            height: 60px;
+            margin-right: 16px;
+            flex-shrink: 0;
+        }
+
+        .types-slider-info-name {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            color: #352F2F;
+        }
+
+        .types-slider-diller {
+            width: 80px;
+            height: 25px;
+
+            img {
+                object-fit: contain;
+            }
+        }
+
+        .types-slider-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .types-slider-box-bottom {
+            background: #F4F4F4;
+            padding: 14px;
+            height: 100%;
+        }
+
+        .types-slider-box-title {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: #352F2F;
+        }
+
+        .slick-arrow {
+            width: 60px;
+            height: 60px;
+            background: #d71b4a;
+            border: 5px solid #fff;
+            border-radius: 50%;
+            top: 50%;
+            z-index: 1;
+            top: 30%;
+        }
+
+        .slick-next {
+            right: -10px;
+        }
+
+        .slick-prev {
+            right: -10px;
+        }
+
+        
+    }
+
+    .form-section {
+        bottom: -12%;
+    }
+    
+}
