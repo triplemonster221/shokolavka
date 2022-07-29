@@ -1,0 +1,198 @@
+.asortiment {
+    padding: 70px 0 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .asortiment-subtitle {
+        margin-bottom: 120px;
+    }
+
+    .asortiment-top  {
+        position: relative;
+        width: 1240px;
+        background: #fff;
+        border-radius: 0px 0px 20px 20px;
+        padding: 0 0 57px 0;
+        margin-bottom: 60px;
+        z-index: 1;
+    
+        &::after {
+            content: "";
+            position: absolute;
+            top: -78px;
+            left: 0;
+            width: 100%;
+            height: 165px;
+            background: #fff;
+            -webkit-box-shadow: 40%;
+            box-shadow: 40%;
+            border-radius: 45%;
+            z-index: 0;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 95%;
+            border-radius: 0px 0px 20px 20px;
+            background: rgba(255,255,255,.6);
+            bottom: -18px;
+            left: 50%;
+            height: 40px;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateX(-50%);
+        }
+    }
+
+    .asortiment-top-text  {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .asortiment-top__img  {
+        position: absolute;
+        width: 96px;
+        height: 96px;
+        background: #fff;
+        border: 6px solid #fef2cc;
+        border-radius: 50%;
+        left: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateX(-50%);
+        z-index: 3;
+        top: -122px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 56px;
+            height: 56px;
+        }
+    }
+
+
+    .slick-slider {
+        width: 100%;
+        background-color: transparent;
+        .slick-track {
+          display: flex;
+          align-items: center;
+          flex-wrap: nowrap;
+          height: 430px;
+          justify-content: center;
+        }
+        .slick-slide{
+          float: none;
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 70px;
+          background-color: white;
+          transition: all 0.3s ease;
+          border-radius: 20px;
+          height: auto;
+          text-align: center;
+          &.slick-current,
+          &.slick-center {
+            transform: scale(1.3);
+            //margin: 50px 0px;
+            border-radius: 20px;
+            overflow: hidden;
+          }
+        }
+
+        .slick-arrow {
+            width: 60px;
+            height: 60px;
+            background: #D71B4A;
+            border: 5px solid #FFFFFF;
+            border-radius: 50%;
+            top: 50%;
+        }
+
+        .slick-next {
+            right: 7%;
+        }
+
+        .slick-prev {
+            left: 7%;
+        }
+      }
+      
+      .slick-prev,
+      .slick-next {
+        z-index:10;  
+        top: 0px;
+        background-color: transparent;
+      }
+      .slick-prev {
+        left: 10px;
+      }
+      .slick-next {
+        right: 10px;
+      }
+
+      .slick-dots li {
+        width: 14px;
+        height: 14px;
+        margin-right: 8px;
+      }
+
+      .slick-dots li button{
+        border: 2px solid #FDE0A2;
+        font-size: 0;
+        border-radius: 50%;
+        background: transparent;
+      }
+
+      .slick-dots li button::before{
+        font-size: 0;
+      }
+
+      .slick-dots li.slick-active button{
+        background: #D71B4A;
+      }
+
+      .asortiment-bottom {
+        display: flex;
+      }
+
+      .asortiment-bottom-img {
+        position: relative;
+        width: 50%;
+
+        &::after {
+            content: '';
+            width: 454px;
+            height: 466px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: url(../img/asortiment/food.png);
+        }
+      }
+
+      .asortiment-bottom-info {
+        max-width: 500px;
+        width: 100%;
+        padding-bottom: 87px;
+      }
+
+      .asortiment-bottom-title {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 150%;
+        margin-bottom: 10px;
+      }
+
+      .asortiment-bottom-text {
+        font-size: 20px;
+        line-height: 150%;
+        margin-bottom: 32px;
+      }
+
+      
+}
