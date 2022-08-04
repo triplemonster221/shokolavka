@@ -3,8 +3,16 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @include mobile() {
+      padding: 40px 0 0 0;
+    }
+
     .asortiment-subtitle {
         margin-bottom: 120px;
+
+        @include mobile() {
+         margin-bottom: 140px;
+       }
     }
 
     .asortiment-top  {
@@ -15,6 +23,15 @@
         padding: 0 0 57px 0;
         margin-bottom: 60px;
         z-index: 1;
+
+        @include over-width() {
+          max-width: 100%;
+       }
+
+       @include mobile() {
+        padding: 0 0 20px 0;
+        margin-bottom: 40px;
+     }
     
         &::after {
             content: "";
@@ -49,6 +66,10 @@
         position: relative;
         z-index: 1;
         text-align: center;
+
+        @include mobile() {
+          margin-bottom: 20px;
+       }
     }
 
     .asortiment-top__img  {
@@ -84,6 +105,10 @@
           flex-wrap: nowrap;
           height: 430px;
           justify-content: center;
+
+          @include mobile() {
+           height: 220px;
+        }
         }
         .slick-slide{
           float: none;
@@ -95,12 +120,27 @@
           border-radius: 20px;
           height: auto;
           text-align: center;
+
+
+          @include desctop() {
+            margin: 0 20px;
+         }
+
+          @include mobile() {
+            margin: 0 ;
+        }
+
+
           &.slick-current,
           &.slick-center {
             transform: scale(1.3);
             //margin: 50px 0px;
             border-radius: 20px;
             overflow: hidden;
+
+            @include mobile() {
+              transform: scale(1);
+           }
           }
         }
 
@@ -164,6 +204,10 @@
         position: relative;
         width: 50%;
 
+        @include mobile() {
+          display: none;
+       }
+
         &::after {
             content: '';
             width: 454px;
@@ -172,6 +216,8 @@
             bottom: 0;
             left: 0;
             background: url(../img/asortiment/food.png);
+
+            
         }
       }
 
@@ -179,6 +225,10 @@
         max-width: 500px;
         width: 100%;
         padding-bottom: 87px;
+
+        @include mobile() {
+          padding-bottom: 40px;
+       }
       }
 
       .asortiment-bottom-title {
@@ -192,6 +242,10 @@
         font-size: 20px;
         line-height: 150%;
         margin-bottom: 32px;
+
+        @include mobile() {
+          margin-bottom: 20px;
+       }
       }
 
       

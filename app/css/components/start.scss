@@ -4,6 +4,14 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    @include desctop() {
+        padding: 50px 0 50px;
+    }
+
+    @include mobile() {
+        padding: 40px 0 40px;
+    }
+
     &::after {
         content: '';
         position: absolute;
@@ -14,6 +22,10 @@
         background-repeat: no-repeat;
         bottom: 115px;
         left: 0;
+
+        @include over-width() {
+            display: none;
+        }
     }
 
     &::before {
@@ -26,12 +38,18 @@
         width: 100%;
         top: 0;
         left: 0;
+
+        @include over-width() {
+            display: none;
+        }
     }
 
 
 
     .start-subtitle {
         margin-bottom: 15px;
+        position: relative;
+        z-index: 1;
     }
 
     .start-info {
@@ -43,6 +61,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include mobile() {
+            width: 90%;
+            display: block;
+            text-align: center;
+            padding-top: 11px;
+        }
 
         span {
             margin-left: 5px;
@@ -59,6 +84,9 @@
         margin-bottom: 48px;
         position: relative;
         align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
         z-index: 1;
     }
 
@@ -72,6 +100,11 @@
         display: flex;
         flex-direction: column;
         transition: all .3s;
+
+        @include mobile() {
+            max-height: 420px;
+            width: 100%;
+        }
 
         &._active {
             max-height: 900px;
@@ -103,6 +136,12 @@
         margin-bottom: 20px;
         flex-shrink: 0;
 
+        @include mobile() {
+            width: 100%;
+            height: 83px;
+            margin-bottom: 0;
+        }
+
         img {
             position: absolute;
             left: 50%;
@@ -112,6 +151,11 @@
             width: 259px;
             height: 180px;
 
+
+            @include mobile() {
+                width: 164px;
+                height: 111px;
+            }
         }
     }
 
@@ -119,6 +163,11 @@
         padding-bottom: 20px;
         border-bottom: 1px solid #D5D5D5;
         margin-bottom: 20px;
+
+        @include mobile() {
+            margin-bottom: 5px;
+            padding-bottom: 0;
+        }
     }
 
     .start-box-title {
@@ -231,10 +280,19 @@
         justify-content: space-between;
         position: relative;
         z-index: 1;
+
+        @include over-width() {
+            flex-direction: column;
+        }
     }
 
     .start-bottom-left  {
         width: 47%;
+
+        @include over-width() {
+            width: 100%;
+            margin-bottom:  20px;
+        }
     }
 
     .start_model {
@@ -249,6 +307,10 @@
 
     .start-bottom-right {
         width: 47%;
+
+        @include over-width() {
+            width: 100%;
+        }
     }
 
     .start-bottom-text {
@@ -264,6 +326,11 @@
         color: #352F2F;
         margin-bottom: 32px;
         margin-top: 71px;
+
+        @include mobile() {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
        
     }
 
@@ -278,6 +345,11 @@
         transform: rotate(5deg);
         top: 38px;
         right: 59px;
+
+
+        @include over-width() {
+            display: none;
+        }
     }
 
 
@@ -294,19 +366,37 @@
         border: 10px solid #F0F0F0;
         border-radius: 20px;
         padding: 87px 0 100px;
+
+        @include desctop() {
+            margin-top: 20px;
+            position: static;
+            transform: translateX(0%);
+        }
     }
 
     .profit-inner {
         display: flex;
         justify-content: space-between;
+
+        @include desctop() {
+            flex-direction: column;
+        }
     }
 
     .profit-calc {
         width: 45%;
+
+        @include desctop() {
+            width: 100%;
+        }
     }
 
     .profit-info {
         width: 50%;
+
+        @include desctop() {
+            width: 100%;
+        }
     }
 
    

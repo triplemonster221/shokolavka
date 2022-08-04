@@ -2,6 +2,10 @@
     position: relative;
     padding: 218px 0 74px 0;
 
+    @include mobile() {
+        padding: 40px 0 40px 0;
+    }
+
     .shop-images{
         position: relative;
 
@@ -14,6 +18,10 @@
             width: 100%;
             bottom: -74px;
             height: 890px;
+
+            @include mobile() {
+                bottom: -40px;
+            }
         }
     }
     
@@ -25,7 +33,13 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
+
+        @include over-width() {
+            display: none;
+        }
     }
+
+    
 
     &::after{
         width: 259px;
@@ -49,6 +63,10 @@
 
     .shop-subtitle {
         margin-bottom: 26px;
+        position: relative;
+        z-index: 2;
+
+
     }
 
     .container {
@@ -80,10 +98,20 @@
 
         .slick-prev{
             left: -110px;
+
+            @include over-width() {
+                left: -11px;
+                z-index: 1;
+            }
         }
 
         .slick-next{
             right: -110px;
+
+            @include over-width() {
+                right: -11px;
+                z-index: 1; 
+            }
         }
     }
 
@@ -108,6 +136,14 @@
         display: flex;
         justify-content: space-around;
         margin-top: 60px;
+
+        @include desctop() {
+           flex-direction: column;
+        }
+
+        @include mobile() {
+            margin-top: 30px;
+          }
     }
 
     .shop-column {
@@ -119,6 +155,17 @@
         justify-content: space-around;
         align-items: center;
         padding: 30px;
+
+        @include desctop() {
+           width: 100%;
+           margin-bottom: 20px;
+         }
+
+         @include mobile() {
+            height: auto;
+            padding: 10px;
+            flex-direction: column-reverse;
+          }
     }
 
     .shop-column-text {

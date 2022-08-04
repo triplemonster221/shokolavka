@@ -4,9 +4,17 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @include mobile() {
+        padding: 40px 0 0 0 ; 
+    }
+
     .types-inner {
         position: relative;
         padding: 0 0 196px 0;
+
+        @include mobile() {
+            padding: 0 0 40px 0;
+        }
 
         &::after {
             content: '';
@@ -17,6 +25,10 @@
             height: 831px;
             background: url(../img/types/women.png);
             background-repeat: no-repeat;
+
+            @include over-width() {
+                display: none;
+            }
         }
     }
 
@@ -29,6 +41,10 @@
         max-width: 610px;
         width: 100%;
         margin-bottom: 34px;
+
+        @include mobile() {
+            margin-bottom: 20px;
+        }
     }
 
     .types-slider {
@@ -42,6 +58,12 @@
             height: auto;
             display: flex;
             flex-direction: column;
+
+            @include mobile() {
+                padding: 0;
+                margin: 0 ;
+                margin-bottom: 20px;
+            }
         }
 
         .slick-track {
@@ -113,6 +135,30 @@
 
         .slick-prev {
             right: -10px;
+        }
+
+
+        .slick-dots {
+            bottom: -8px;
+        }
+
+        .slick-dots li button {
+            border: 2px solid #fde0a2;
+            
+            font-size: 0;
+            border-radius: 50%;
+            background: rgba(0,0,0,0);
+
+            @include mobile() {
+            }
+        }
+
+        .slick-dots li.slick-active button {
+            background: #d71b4a ;
+        }
+
+        .slick-dots li.slick-active button:before {
+            opacity: 0;
         }
 
         

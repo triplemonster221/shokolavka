@@ -26,11 +26,21 @@
 
     .advantarges-top-info {
         width: 50%;
+
+
+        @include mobile() {
+            width: 100%;
+        }
+
     }
 
     .advantarges-top-img {
         position: relative;
         width: 50%;
+
+        @include mobile() {
+            display: none;
+        }
 
 
         &::after {
@@ -105,9 +115,24 @@
     border-radius: 20px;
     margin-bottom: 46px;
 
+
+    @include mobile() {
+       flex-direction: column;
+       padding: 20px 10px 5px 10px;
+    }
+
     .advantarges-maps-img  {
         position: relative;
         width: 40%;
+
+        @include small() {
+           width: 90%;
+          }
+
+          @include mobile() {
+            width: 100%;
+            height: 300px;
+         }
 
         &::after {
             content: '';
@@ -119,12 +144,24 @@
             background: url(../img/advantages/map.png);
             background-repeat: no-repeat;
             background-size: cover;
+
+            @include mobile() {
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-size: contain;
+             }
         }
     }
 
     .advantarges-maps-info {
         width: 60%;
         margin-bottom: 37px;
+
+        @include mobile() {
+            width: 100%;
+            margin-bottom: 20px;
+         }
     }
 
     ul.advantarges-maps-list {
@@ -165,6 +202,10 @@
     position: relative;
     display: flex;
 
+    @include desctop() {
+        flex-direction: column;
+      }
+
     &::after {
         content: '';
         position: absolute;
@@ -174,6 +215,10 @@
         background: url(../img/advantages/cooki.png);
         left: -19%;
         top: -40%;
+
+        @include mobile() {
+            display: none;
+         }
     }
 
 
@@ -185,6 +230,14 @@
         background: #FFFFFF;
         border-radius: 20px;
         margin-left: 51px;
+
+        @include desctop() {
+            margin: 0 auto 20px; 
+          }
+
+          @include mobile() {
+            width: 100%;
+          }
 
         &::after {
             content: '';
@@ -231,6 +284,13 @@
     .advantarges-bottom-info {
         width: 50%;
         margin-left: 78px;
+
+
+        @include desctop() {
+           width: 100%;
+           margin-left: 0; 
+          }
+        
     }
 
     .advantarges-bottom-info__text {

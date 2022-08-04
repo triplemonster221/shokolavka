@@ -11,31 +11,30 @@ block offer
                 p.offer-text Разработана стратегическая устойчивость бизнес-модели: 
                     span 65% покупателей 
                     |при наличии выбора предпочитают профильные магазины
-                .swiper.offer-swiper
-                    .offer-list.swiper-wrapper
-                        .swiper-slide 
-                            .offer-item 
-                                .offer-item__img 
-                                    img(src="img/offer/1.svg", alt="")
-                                .offer-item__info 
-                                span.fat Маржинальность товаров: 
-                                |от 35%
-                        .swiper-slide 
-                            .offer-item 
-                                .offer-item__img 
-                                    img(src="img/offer/2.svg", alt="")
-                                .offer-item__info Подойдет для города с населением: 
-                                    span.fat от 150 000 человек
-                        .swiper-slide 
-                            .offer-item 
-                                .offer-item__img 
-                                    img(src="img/offer/3.svg", alt="")
-                                .offer-item__info Для старта достаточно павильона в торговом центре 
-                                    span.fat площадью 20-25 м<sup>2</sup> 
-                    .swiper-pagination.offer-pagination
+                .offer-slider
+                    .swiper-slide 
+                        .offer-item 
+                            .offer-item__img 
+                                img(src="img/offer/1.svg", alt="")
+                            .offer-item__info 
+                            span.fat Маржинальность товаров: 
+                            |от 35%
+                    .swiper-slide 
+                        .offer-item 
+                            .offer-item__img 
+                                img(src="img/offer/2.svg", alt="")
+                            .offer-item__info Подойдет для города с населением: 
+                                span.fat от 150 000 человек
+                    .swiper-slide 
+                        .offer-item 
+                            .offer-item__img 
+                                img(src="img/offer/3.svg", alt="")
+                            .offer-item__info Для старта достаточно павильона в торговом центре 
+                                span.fat площадью 20-25 м<sup>2</sup> 
                 .offer__man 
                     img(src="img/offer/women.png", alt="")
-        .form-section 
+                button.btn.mob_btn.mob_form-offer Скачать презентацию
+        .form-section.mob-section 
             form.form-section-inner.sectionForm(action="#") 
                 p.form-section-title 
                     |Узнайте больше информации о франшизе «Шоколавка» из презентации
