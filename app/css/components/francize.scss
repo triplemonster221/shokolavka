@@ -1,0 +1,88 @@
+.francize {
+    position: relative;
+    padding: 71px 0 403px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+    .francize-subtitle {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 150%;
+        text-align: center;
+        color: #352F2F;
+        margin-bottom: 48px;
+    }
+
+    .francize-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .francize-left ,
+    .francize-right {
+        display: flex;
+        width: 47%;
+    } 
+    .francize-left {
+        width: 50%;
+    }
+
+
+    .francize-text {
+        margin-bottom: 32px;
+    }
+
+    
+
+    .francize-img {
+        flex-shrink: 0;
+        width: 88px;
+        height: 88px;
+        background: linear-gradient(180deg, #FFF4D0 0%, #FCCE78 100%);
+        border: 6px solid #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-right: 32px;
+
+        img {
+            width: 58px;
+            height: 58px;
+        }
+    }
+
+    .francize-info-list {
+        margin-top: 9px;
+    }
+
+    .francize-info-item {
+        position: relative;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        padding-left: 20px;
+        color: #352F2F;
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 9px;
+            height: 9px;
+            background: #D71B4A;
+            border-radius: 50%;
+        }
+    }
+
+
+    .form-section {
+        bottom: 8%;
+    }
+
+
+}

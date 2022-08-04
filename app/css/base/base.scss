@@ -303,3 +303,13 @@ html {
     .red{
         color: #D71B4A;
     }
+
+    button.btn[type="submit"] {
+        
+        pointer-events: none;
+        cursor: not-allowed;
+        &._active {
+            cursor: pointer;
+            pointer-events: auto;
+        }
+    }

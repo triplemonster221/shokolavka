@@ -56,17 +56,17 @@ block types
                         .types-slider-box-bottom 
                             .types-slider-box-title Отличный магазин! Огромный выбор сладостей российских производителей. Трудно уйти без покупок — всегда беру больше, чем планировала, но ни разу не пожалела! Очень вкусно!
             .form-section 
-                .form-section-inner 
+                form.form-section-inner.sectionForm(action="") 
                     p.form-section-title 
                         |Узнайте подробнее, за что покупатели любят «Шоколавку»
                     .form-section-wrap  
                         .form-section-row 
-                            input(type="text" name="phone" placeholder="+7 (___) ___ ___")
+                            input.phone(type="text" name="phone" placeholder="+7 (___) ___ ___")
                         .form-section-row 
                             input(type="text" name="email" placeholder="bestpartner@shokolavka.ru") 
                         .form-section-row 
                             input(type="text" name="name" placeholder="Елена Волкова") 
-                        button.btn.form-section-btn Узнать подробнее
+                        button.btn.form-section-btn(type="submit") Узнать подробнее
                     .form-section-bottom
                         <div class="pretty p-default p-fill p-svg">
                             <input type="checkbox" />

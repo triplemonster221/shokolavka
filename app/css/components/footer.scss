@@ -1,0 +1,204 @@
+.footer {
+    position: relative;
+    z-index: 1;
+    padding: 30px 0 31px;
+
+
+    .footer-inner{
+        display: flex;
+        justify-content: space-between;
+
+        @include mobile (){
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    .footer-column  {
+        width: 220px;
+
+        @include mobile (){
+            width: 100% !important;
+        }
+    }
+
+    .footer-column_big {
+        width: 220px;
+
+        @include mobile (){
+            text-align: center;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #636363;
+        margin-bottom: 7px;
+
+        @include mobile (){
+            font-size: 14px !important;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+    }
+
+    .flag_footer {
+        position: relative;
+        padding-left: 45px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 23px;
+            left: 0;
+            top: 6px;
+            background: url(../img/footer/flag.png);
+        }
+    }
+
+    .footer__text-img {
+        position: relative;
+        padding-left: 45px;
+
+        @include mobile (){
+            padding-left: 30px;
+            width: 160px;
+            margin: 0 auto;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            background: url(../../img/footer/1.png);
+            width: 36px;
+            height: 36px;
+            background-size: cover;
+            left: 0;
+            top: -10px;
+
+            @include mobile (){
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+
+    .footer__logo {
+        width: 170px;
+        display: block;
+        height: auto; 
+        margin: 0 auto 30px; 
+        
+        img {
+            object-fit: contain;
+        }
+
+        @include mobile (){
+            width: 95px;
+            display: block;
+            height: 30px;
+            margin: 0 auto 15px;
+        }
+    }
+
+    .footer-link {
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: 0 auto;
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    .footer-phone-inner {
+        text-align: center;
+    }
+
+    .footer-phone {
+        display: flex;
+        margin-bottom: 51px;
+
+        @include mobile (){
+            width: 200px;
+            margin: 0 auto 20px;
+        }
+
+        .footer-phone__tel {
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 21px;
+            color: #352F2F;
+            margin-bottom: 5px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .footer-phone__back {
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 16px;
+            text-align: center;
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            color: #D71B4A;
+            background: transparent;
+            border: none;
+        }
+    } 
+
+    .footer-phone__img {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+        margin-top: 5px;
+        margin-right: -27px;
+    }
+
+    .footer__text-images {
+        display: block;
+        position: relative;
+        padding-left: 30px;
+        line-height: 1.1em;
+
+        @include mobile (){
+            padding-left: 36px;
+            width: 216px;
+            margin: 0 auto 20px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            background: url(../../img/footer/f5.png);
+            width: 30px;
+            height: 30px;
+            background-size: contain;
+            left: -10px;
+            top: 0;
+
+            @include mobile (){
+                left: 0;
+            }
+        }
+    }
+
+    .footer__text_link {
+        text-decoration: underline;
+    }
+}
+
+button.away-modals  {
+    opacity: 0;
+}
+
+.footer-other {
+    cursor: default !important;
+    pointer-events: none;
+}

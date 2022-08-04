@@ -193,6 +193,10 @@
     .wrapper {
        
     }
+
+    .form-section {
+        z-index: 1;
+    }
 }
 
 .form-section  {
@@ -207,6 +211,8 @@
     border-radius: 20px;
     transform: translateX(-50%);
     padding: 41px 29px 39px 30px;
+
+}
 
 
     
@@ -230,7 +236,6 @@
     background: #FFFFFF;
     border: 1px solid #E4E4E4;
     border-radius: 10px;
-    padding-left: 52px;
     width: 237px;
     height: 55px;
     overflow: hidden;
@@ -262,6 +267,8 @@
     &:nth-child(3)::after {
         background-image: url(../img/offer/User.svg);
     }
+
+  
 }
 
 
@@ -270,6 +277,10 @@
     width: 100%;
     height: 100%;
     border: none;
+    padding-left: 52px;
+
+    &:-internal-autofill-selected {
+    }
 }
 
 .form-section-bottom  {
@@ -293,4 +304,6 @@
     background-color: #41D64F !important;
 }
 
-}
+
+
+

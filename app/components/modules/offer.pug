@@ -36,17 +36,17 @@ block offer
                 .offer__man 
                     img(src="img/offer/women.png", alt="")
         .form-section 
-            .form-section-inner 
+            form.form-section-inner.sectionForm(action="#") 
                 p.form-section-title 
                     |Узнайте больше информации о франшизе «Шоколавка» из презентации
                 .form-section-wrap  
                     .form-section-row 
-                        input(type="text" name="phone" placeholder="+7 (___) ___ ___")
+                        input.phone(type="text" name="phone" placeholder="+7 (___) ___ ___")
                     .form-section-row 
                         input(type="text" name="email" placeholder="bestpartner@shokolavka.ru") 
                     .form-section-row 
                         input(type="text" name="name" placeholder="Елена Волкова") 
-                    button.btn.form-section-btn Скачать презентацию
+                    button.btn.form-section-btn(type="submit") Скачать презентацию
                 .form-section-bottom
                     <div class="pretty p-default p-fill p-svg">
                         <input type="checkbox" />

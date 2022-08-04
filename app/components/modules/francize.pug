@@ -1,3 +1,48 @@
 block francize 
     section.francize(style="background-image:url(img/francize/bg.jpg);") 
         .container 
+            h2.francize-title.section-title.tac Откройте магазин сладостей <br> по франшизе «Шоколавка»
+            p.francize-subtitle.tac и мы обеспечим регулярные поставки <br> и обновление ассортимента кондитерских изделий
+            p.francize-text.tac Эксперты головной компании заинтересованы в высоких результатах каждого партнёра и <br> масштабировании бизнеса, поэтому остаются на связи до, во время и после открытия торговой точки.
+            .francize-inner 
+                .francize-left 
+                    .francize-img 
+                        img(src="img/francize/1.svg", alt="")
+                    .francize-info 
+                        .francize-info-text.text Специалисты головного офиса 
+                            span.fat оказывают <br> полноценную поддержку:
+                        ul.francize-info-list 
+                            li.francize-info-item сопровождение на всех этапах ведения бизнеса;
+                            li.francize-info-item обучение собственника магазина;
+                            li.francize-info-item организация поставок;
+                            li.francize-info-item консультации в корпоративном чате;
+                            li.francize-info-item передача и обновление внутренних регламентов торговой сети.
+                .francize-right
+                    .francize-img 
+                        img(src="img/francize/2.svg", alt="")
+                    .francize-info 
+                        .francize-info-text.text 
+                            span.fat В каждом магазине квалифицированные продавцы 
+                            |поддерживают высокий уровень сервиса: консультируют по новинкам товаров, подбирают сладости под индивидуальные предпочтения, рассказывают об условиях хранения кондитерских изделий.
+            .form-section 
+                form.form-section-inner.sectionForm(action="")  
+                    p.form-section-title 
+                        |Откройте магазин сладостей по франшизе «Шоколавка»
+                    .form-section-wrap  
+                        .form-section-row 
+                            input.phone(type="text" name="phone" placeholder="+7 (___) ___ ___")
+                        .form-section-row 
+                            input(type="text" name="email" placeholder="bestpartner@shokolavka.ru") 
+                        .form-section-row 
+                            input(type="text" name="name" placeholder="Елена Волкова") 
+                        button.btn.form-section-btn(type="submit") Оставить заявку
+                    .form-section-bottom
+                        <div class="pretty p-default p-fill p-svg">
+                            <input type="checkbox" />
+                            <div class="state p-success">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                </svg>
+                                <label>Я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных на условиях и для целей, определяемых Политикой конфиденциальности</label>
+                            </div>
+                        </div>

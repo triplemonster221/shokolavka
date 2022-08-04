@@ -1,6 +1,8 @@
 .result {
     position: relative;
     padding: 71px 0 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 
     &::after {

@@ -25,6 +25,7 @@ block start
                                     li.start-box-info__item опробованных успешных технологий формирования команды, в т. ч. портреты целевых сотрудников и критерии отбора специалистов
                                 .start-box-info__bottom 
                                     button.start-box-info__more Смотреть всё
+                                    button.start-box-info__more.hide Cкрыть
                     .start-box 
                         .start-box-img 
                             img(src="img/start/2.png", alt="")
@@ -42,6 +43,7 @@ block start
                                     li.start-box-info__item Консультации по стандартам хранения и учёта товаров.
                                 .start-box-info__bottom 
                                     button.start-box-info__more Смотреть всё
+                                    button.start-box-info__more.hide Cкрыть
                     .start-box 
                         .start-box-img 
                             img(src="img/start/3.png", alt="")
@@ -57,6 +59,7 @@ block start
                                     li.start-box-info__item Передача маркетинговых материалов: правила оформления помещения, макет вывески, материалов для печати (листовки для раздачи промоутерами, ценники)
                                 .start-box-info__bottom 
                                     button.start-box-info__more Смотреть всё
+                                    button.start-box-info__more.hide Cкрыть
                 .start-bottom 
                     .start-bottom-left 
                         p.model-bottom-left-info.start_model Благодаря отработанной бизнес-модели сети «Шоколавка» специализированный магазин сладостей выйдет 
@@ -78,13 +81,37 @@ block start
                             h2.start-title.section-title.tac Расчёт прибыли <br>
                                 span.title-reg будущего магазина
                             .calc 
+                                .calc-row 
+                                    .calc-row-top 
+                                        p.calc-title Количество покупателей в месяц, шт.
+                                        input.calc-inp.range-people(type="text" READONLY)
+                                    .calc-row-content     
+                                        input.calc-range.slider(type="range" min="1500" max="3500" value="2500")
+                                        #selector 
+                                            #selectorBtn 
+                                        #selectorvalue 
+                                        #minNumber 1500
+                                        #maxNumber 3500
+                                .calc-row 
+                                    .calc-row-top 
+                                        p.calc-title Средний чек, руб.
+                                            span “Сладкий стол”
+                                        input.calc-inp.range-sum(type="text" READONLY)
+                                    .calc-row-content     
+                                        input.calc-range.slider(type="range" min="200" max="650" value="550")
+                                        #selector 
+                                            #selectorBtn 
+                                        #selectorvalue 
+                                        #minNumber 200
+                                        #maxNumber 650
                         .profit-info 
                             .profit-info-title Прогноз важных финансовых показателей бизнеса — объёма продаж, выручки, прибыли 
                                 span.fat за 2 минуты.
                             .profit-info-inner 
                                 .profit-info-inner-subtitle Прибыль магазина в месяц:
-                                .profit-info-inner-title 1 375 000
-                                    span рублей
+                                .profit-info-inner-title 
+                                    span.total-show 1 375 000     
+                                    | рублей
                                 .profit-info-inner-bottom Отлаженные бизнес-процессы позволяют окупить инвестиции 
                                     span.fat уже за 10 месяцев.
                         
