@@ -3,7 +3,17 @@
     padding: 71px 0 403px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+
+
+    @include mobile() {
+        background-image: none !important;
+    }
     
+
+    @include mobile() {
+        padding: 40px 0 40px;
+    }
 
     .francize-subtitle {
         font-weight: 400;
@@ -12,25 +22,50 @@
         text-align: center;
         color: #352F2F;
         margin-bottom: 48px;
+
+        @include mobile() {
+            margin-bottom: 20px;
+        }
     }
 
     .francize-inner {
         display: flex;
         justify-content: space-between;
+
+        @include desctop() {
+            flex-direction: column;
+        }
     }
 
     .francize-left ,
     .francize-right {
         display: flex;
         width: 47%;
+
+        @include desctop() {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        @include mobile() {
+            flex-direction: column;
+        }
     } 
     .francize-left {
         width: 50%;
+
+        @include desctop() {
+            width: 100%;
+        }
     }
 
 
     .francize-text {
         margin-bottom: 32px;
+
+        @include mobile() {
+            margin-bottom: 20px;
+        }
     }
 
     
@@ -47,9 +82,17 @@
         border-radius: 50%;
         margin-right: 32px;
 
+        @include mobile() {
+            margin-right: 0;
+            margin: 0 auto 20px;
+        }
+
         img {
             width: 58px;
             height: 58px;
+
+            @include mobile() {
+            }
         }
     }
 

@@ -26,8 +26,9 @@ block modal
                                 <svg class="svg svg-icon" viewBox="0 0 20 20">
                                     <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
                                 </svg>
-                                <label>Я подтверждаю, что ознакомлен и даю<br> согласие на обработку персональных данных<br> на условиях и для целей, определяемых<br> <a>Политикой конфиденциальности</a></label>
+                                <label>Я подтверждаю, что ознакомлен и даю<br> согласие на обработку персональных данных<br> на условиях и для целей, определяемых<br></label>
                             </div>
+                            <a href="#" class="policy">Политикой конфиденциальности</a>
                         </div>
         .modal-content-inner.modal-download
             .clouse 
@@ -55,8 +56,9 @@ block modal
                                 <svg class="svg svg-icon" viewBox="0 0 20 20">
                                     <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
                                 </svg>
-                                <label>Я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных на условиях и для целей, определяемых Политикой конфиденциальности</label>
+                                <label>Я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных на условиях и для целей, определяемых</label>
                             </div>
+                            <a href="#" class="policy">Политикой конфиденциальности</a>
                         </div>
         .modal-content-inner.modal-away
             .clouse 
@@ -84,9 +86,82 @@ block modal
                                 <svg class="svg svg-icon" viewBox="0 0 20 20">
                                     <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
                                 </svg>
-                                <label>Я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных на условиях и для целей, определяемых Политикой конфиденциальности</label>
+                                <label>Я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных на условиях и для целей, определяемых</label>
                             </div>
+                            <a href="#" class="policy">Политикой конфиденциальности</a>
                         </div>
+        .form-section.mob-sections.offer-form 
+            .clouse 
+            form.form-section-inner.sectionForm(action="#") 
+                p.form-section-title 
+                    |Узнайте больше информации о франшизе «Шоколавка» из презентации
+                .form-section-wrap  
+                    .form-section-row 
+                        input.phone(type="text" name="phone" placeholder="+7 (___) ___ ___")
+                    .form-section-row 
+                        input(type="text" name="email" placeholder="bestpartner@shokolavka.ru") 
+                    .form-section-row 
+                        input(type="text" name="name" placeholder="Елена Волкова") 
+                    button.btn.form-section-btn(type="submit") Скачать презентацию
+                .form-section-bottom
+                    <div class="pretty p-default p-fill p-svg">
+                        <input type="checkbox" />
+                        <div class="state p-success">
+                            <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                            </svg>
+                            <label>Я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных на условиях и для целей, определяемых </label>
+                        </div>
+                        <a href="#" class="policy">Политикой конфиденциальности</a>
+                    </div>
+        .form-section.mob-sections.total-form 
+            .clouse 
+            form.form-section-inner.sectionForm(action="")  
+                p.form-section-title 
+                    |Узнайте больше информации о франшизе «Шоколавка» из презентации
+                .form-section-wrap  
+                    .form-section-row 
+                        input.phone(type="text" name="phone" placeholder="+7 (___) ___ ___")
+                    .form-section-row 
+                        input(type="text" name="email" placeholder="bestpartner@shokolavka.ru") 
+                    .form-section-row 
+                        input(type="text" name="name" placeholder="Елена Волкова") 
+                    button.btn.form-section-btn(type="submit") Получить информацию
+                .form-section-bottom
+                    <div class="pretty p-default p-fill p-svg">
+                        <input type="checkbox" />
+                        <div class="state p-success">
+                            <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                            </svg>
+                            <label>Я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных на условиях и для целей, определяемых</label>
+                        </div>
+                        <a href="#" class="policy">Политикой конфиденциальности</a>
+                    </div>
+        .form-section.mob-sections.types-form 
+            .clouse  
+            form.form-section-inner.sectionForm(action="") 
+                p.form-section-title 
+                    |Узнайте подробнее, за что покупатели любят «Шоколавку»
+                .form-section-wrap  
+                    .form-section-row 
+                        input.phone(type="text" name="phone" placeholder="+7 (___) ___ ___")
+                    .form-section-row 
+                        input(type="text" name="email" placeholder="bestpartner@shokolavka.ru") 
+                    .form-section-row 
+                        input(type="text" name="name" placeholder="Елена Волкова") 
+                    button.btn.form-section-btn(type="submit") Узнать подробнее
+                .form-section-bottom
+                    <div class="pretty p-default p-fill p-svg">
+                        <input type="checkbox" />
+                        <div class="state p-success">
+                            <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                            </svg>
+                            <label>Я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных на условиях и для целей, определяемых </label>
+                        </div>
+                        <a href="#" class="policy">Политикой конфиденциальности</a>
+                    </div> 
         .modal-content-inner.modal-politika
             h3.modal-top__title Политика конфиденциальности
             .modal-content

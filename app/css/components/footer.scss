@@ -19,6 +19,7 @@
 
         @include mobile (){
             width: 100% !important;
+            text-align: center;
         }
     }
 
@@ -97,9 +98,9 @@
         }
 
         @include mobile (){
-            width: 95px;
+            width: 200px;
             display: block;
-            height: 30px;
+            height: 100px;
             margin: 0 auto 15px;
         }
     }

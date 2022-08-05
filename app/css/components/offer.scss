@@ -147,8 +147,8 @@
             flex: 0 1 277px;flex: 0 1 auto;
         }
 
-        @include desctop() {
-            
+        @include mobile() {
+            text-align: center;
         }
 
 
@@ -258,14 +258,36 @@
         position: relative;
     }
 
+    &.mob-sections {
+        display: none;
+    }
+
     @include mobile (){
         display: none;
+        padding: 41px 15px 39px 15px;
     }
     .pretty {
         @include small (){
             white-space: inherit;
         } 
     }
+
+    &.active {
+        @include mobile (){
+            width: 320px;
+            display: block;
+            left: 0;
+            transform: translateX(0%);
+        }
+    } 
+
+    .state label a {
+        position: relative;
+        z-index: 3;
+        text-decoration: underline;
+        color: #686363;
+    }
+    
     
     .pretty .state label:after, .pretty .state label:before {
         @include small (){
@@ -327,6 +349,10 @@
         top: 16px;
         width: 24px;
         height: 24px;
+
+        @include mobile (){
+            top: 7px;
+        }
     }
 
 
@@ -338,6 +364,9 @@
         background-image: url(../img/offer/mail.svg);
         left: 17px;
         top: 19px;
+        @include mobile (){
+            top: 9px;
+        }
     }
 
     &:nth-child(3)::after {

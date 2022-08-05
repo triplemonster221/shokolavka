@@ -34,6 +34,7 @@ $(document).ready(function(){
               if(e.target){
                   e.preventDefault();
               }
+             
               modalInner.classList.add('active');
               modals.classList.add('active');
               document.body.style.overflow = 'hidden';
@@ -135,6 +136,13 @@ $(document).ready(function(){
     bindModals('.start-bottom-righ-btn ', '.modal-download', '.modal-download .clouse');
     bindModals('.invest-bottom-btn', '.modal-download', '.modal-download .clouse');
  
+    // формы с лендоса
+
+
+    bindModals('.mob_form-offer', '.offer-form', '.offer-form .clouse');
+    bindModals('.mob_form-total', '.total-form ', '.total-form  .clouse');
+    bindModals('.mob_form-types', '.types-form', '.types-form .clouse');
+
 $('.slick-slider').slick({
   centerMode: true,
   slidesToShow: 3,

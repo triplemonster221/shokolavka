@@ -2,12 +2,24 @@
     position: relative;
     padding: 391px 0 87px;
 
+    @include desctop() {
+        padding: 91px 0 87px;  
+    }
+
+    @include mobile() {
+        padding: 40px 0 40px;  
+    }
+
     &::after,
     &::before {
         content: '';
         position: absolute;
         background-size: cover;
         background-repeat: no-repeat;
+
+        @include over-width() {
+            display: none;
+        }
     }
 
     &::after {
@@ -36,6 +48,10 @@
             position: absolute;
             background-size: cover;
             background-repeat: no-repeat;
+
+            @include over-width() {
+                display: none;
+            }
         }
 
         &::after {
@@ -60,6 +76,10 @@
     .invest-subtitle {
         text-align: center;
         margin-bottom: 32px;
+
+        @include mobile() {
+            margin-bottom: 20px; 
+        }
     }
 
     .invest-inner {
@@ -70,12 +90,23 @@
         height: 893px;
         margin: 0 auto;
         padding: 75px 68px 68px 68px;
+
+        @include mobile() {
+            background-image: none !important;
+            padding: 20px 10px 20px 10px;
+            height: auto;
+        }
     }
 
     .invest-info-item {
         padding: 20px 20px 17px 20px;
         display: flex;
         justify-content: space-between;
+
+        @include mobile() {
+            flex-direction: column;
+            padding: 10px 10px 10px 10px;
+        }
 
         &:nth-child(1),
         &:nth-child(3),
@@ -114,6 +145,10 @@
 
     .invest-info {
         padding: 40px 0px 30px 8px;
+
+        @include mobile() {
+            padding: 0px 0px 0px 0px;
+        }
     }
 
     .invest-info-left {
@@ -137,6 +172,15 @@
         line-height: 150%;
         text-align: center;
         color: #352F2F;
+
+        @include mobile() {
+            margin-top: 20px;
+            font-size: 13px !important;
+        }
+
+        span {
+            font-size: 13px !important;
+        }
     }
 
     .invest-bottom {
@@ -151,11 +195,19 @@
         line-height: 150%;
         text-align: center;
         color: #352F2F;
+
+        @include mobile() {
+            margin-bottom: 20px;
+        }
     }
 
     .invest-bottom-btn {
         width: 426px;
         margin: 0 auto;
+
+        @include mobile() {
+            font-size: 13px !important;
+        }
     }
 }
 
